@@ -1,0 +1,9 @@
+#drawing
+   im = plt.imshow(my_board)
+   plt.show()
+   for x in Person_info:
+       for y in x:
+           if y[2] >0 and y[2] < 256:
+               infection_count += 1
+   if infection_count == 0: 
+       no_infection = True        
