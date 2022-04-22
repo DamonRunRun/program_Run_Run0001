@@ -1,0 +1,14 @@
+
+def init_map():
+    my_board = np.zeros((50, 50, 3), np.uint8)
+    Person_info = []
+    for i in range(50):
+        my_line =[]
+        for j in range(50):
+            #for k in range(3):
+                my_board[i,j] = [0,255,0]
+                healthpoint = randint(256,300)
+                my_line.append([i,j,healthpoint,10,10,False])
+        Person_info.append(my_line)
+
+    return my_board,Person_info
