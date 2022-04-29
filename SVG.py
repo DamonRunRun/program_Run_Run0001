@@ -1,0 +1,10 @@
+line_chart = pygal.StackedBar()
+line_chart.title = 'Browser usage evolution (in %)'
+line_chart.x_labels = map(str, range(0, 70))
+line_chart.add('susceptible', My_days[0])
+line_chart.add('mild infected',  My_days[1])
+line_chart.add('infected', My_days[2])
+line_chart.add('seriously infected',  My_days[3])
+line_chart.add('recorvered',  My_days[4])
+line_chart.add('death',  My_days[5])
+line_chart.render_to_file('bar_chart.svg')
